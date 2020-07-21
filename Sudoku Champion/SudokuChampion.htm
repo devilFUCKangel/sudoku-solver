@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML lang="en">
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<meta name="DESCRIPTION"
+content="Sudoku Champion Help">
+<meta name="KEYWORDS" content="Martin, Fierz, Martin Fierz, Sudoku">
+
+<title>Sudoku Champion Helpfile</title>
+
+<style type="text/css">
+   h1 {color:white; font-size: 32px; font-family: verdana, arial, sans-serif; margin-top:20px;}
+   h2 {color:dark-red; font-size: 24px; font-family: verdana, arial, sans-serif; margin-top:5px;}
+   h3 {margin-top:25px; margin-bottom:0px;}
+   h4 {margin-top:10px; margin-bottom:5px;border-bottom:1px solid #bbb;width:100%}
+	
+	.classbody a {text-decoration:underline}
+	.classbody a:link {color:blue}
+	.classbody a:visited {color:purple}
+	.classbody a:hover {color:red}
+	.classbody a:active {color:red}
+	
+	.classwhite a {text-decoration:none}
+	.classwhite a:active {color:white}
+	.classwhite a:link {color:white}
+	.classwhite a:visited {color:white}
+	.classwhite a:hover {color:yellow}
+	
+	body {	
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	font: normal 14px Verdana, Georgia, sans-serif;
+	color: #000480;
+	background: #fff; 
+	background: url("programsbackground.png") repeat-x;
+	}
+	
+	
+		
+	.floatright {
+	float:right;
+	clear:both;
+	margin:10px;
+	}
+		
+	#heading {
+	position: relative;
+	left: 10px;
+	top: 0px;
+	height: 100px;
+	width: 90%;
+	padding: 5px;
+	padding-top:20px;
+	background: #000480;
+	color: #eee;
+	text-align: left;
+	}
+	
+	
+	#section{
+	position: relative;
+	left: 10px;
+	top: 10px;
+	width: 90%;
+	padding: 5px;
+	padding-right: 20px;
+	text-align: left;
+	background: #eee;
+	}
+	
+	
+	
+		
+	
+</style>
+</head>
+
+<body >
+<div id="heading">
+<h2>Sudoku Champion Help</h2>
+</div>
+
+
+
+<div id="section">
+<h3>Introduction</h3>
+Sudoku Champion is a powerful Sudoku program with a large number of features:
+You can create your own Sudoku settings, or have Sudoku Champion create one. You
+can save and load puzzles, and you can copy and paste them as text so you
+can easily share them by email. Sudoku Champion can solve a Sudoku on its own,
+or it can give you different forms of hints, or you can solve it all by
+yourself. Finally, you can also print Sudoku puzzles.
+<img class="floatright" src="sudokuscreenshot.png" alt="A screenshot of Sudoku Champion">
+
+<h3>Quick Start</h3>
+When you start Sudoku Champion, it opens with a newly generated puzzle for you
+to solve. Every puzzle has a unique solution. Sudoku Champion always highlights
+the currently active cell by drawing its border in red. To change the value
+of the highlighted cell, just type a number from 1 to 9 on the keyboard. Typing
+0, delete or backspace will clear the current value of the cell. You can move the active cell
+with the arrow keys or by clicking a different cell with the mouse. While
+you solve the puzzle, Sudoku Champion offers you different types of help:
+<UL>
+<LI>Cells which can be solved can be highlighted
+<LI>The highlighting can be coded according to the reason for which the cell is solvable
+<LI>Right-clicking a cell with the mouse will display the remaining possible values of that cell in the status bar
+<LI>You can also display all possible remaining numbers for a cell inside the cell as "pencilmarks".
+<!--<LI>Sudoku Champion can prevent you from entering wrong numbers in a cell-->
+<!--<LI>Sudoku Champion can display a message if the puzzle cannot be solved any
+more-->
+<LI>By double-clicking on a cell which can be resolved through simple scanning,
+Sudoku Champion will fill in the cell's value for you
+<LI>Sudoku Champion can count the number of solutions a given Sudoku has
+<LI>Sudoku Champion can solve the entire Sudoku for you
+</UL>
+
+
+
+
+<h3>Menu Command Reference</h3>
+
+<h4>The File Menu</h4>
+<UL>
+<LI><b>New</b><br>
+creates a new Sudoku with a unique solution
+<LI><b>New Empty</b><br>
+creates an empty Sudoku
+<LI><b>Open</b><br>
+loads a Sudoku from a file
+<LI><b>Save</b><br>
+saves a Sudoku to a file
+<LI><b>Print</b><br>
+prints the current Sudoku in the current style, and 5 more Sudokus to go with it - to check this...
+<LI><b>Print Preview</b><br>
+...lets you see what you are going to print
+<LI><b>Exit</b><br>
+terminates the program
+</UL>
+
+<h4>The Edit Menu</h4>
+<UL>
+<LI><b>Undo</b><br>
+takes back the last change you made to the Sudoku
+<LI><b>Redo</b><br>
+redoes the last change you undid
+<LI><b>Copy</b><br>
+copies the Sudoku as a string to the clipboard. You can send this to a friend in an email, and she can...
+<LI><b>Paste</b><br>
+...paste it into her copy of Sudoku Champion
+</UL>
+
+<h4>The Tools Menu</h4>
+<img class="floatright" src="sudokuhighlight.png" alt="highlighting example">
+<!--
+<img src="sudokuregion.png" class="floatRight">
+A large box in the center of the cell means that this cell is the only one in this region which can take a specific
+value
+<img src="sudokurow.png" class="floatRight">
+A horizontal bar in the cell means that this cell is the only one in this row which can take a specific
+value
+<img src="sudokucolumn.png" class="floatRight">
+A vertical bar in the cell means that this cell is the only one in this column which can take a specific
+value-->
+
+<UL>
+<LI><b>Show remaining possibilities</b><br>
+shows all remaining possibilities as small numbers inside the cell (pencilmarks).
+<LI><b>Highlight resolvable cells</b><br>
+highlights cells which can be solved in gold
+<li><b>Show Hint for Resolvable Cells</b><br>
+gives you a hint why the cell can be solved. There are 4 different reasons why
+a cell can be solved: If there is only one remaining value a cell can take, or if the
+cell is the only cell in a row/column/region which can take a certain value. The image on the 
+right shows all of these hints: a small box in the lower right corner means that this cell can only
+take one value. A larger box in the cell center means that this cell is the only cell in this region
+which can take a specific value. A vertical bar in a cell means that this cell is the only cell in
+a column which can take a specific value. A horizontal bar means that this is the only cell in a
+row which can take a specific value.
+
+<!--<img src="sudokuregion.png"><img src="sudokurow.png"><img src="sudokucolumn.png">-->
+
+<li><b>Count Solutions</b><br>
+counts the number of solutions the Sudoku has. A well-formed Sudoku has a single
+solution. If the number of solutions exceeds 100, Sudoku Champion stops searching
+for further solutions.
+<LI><b>Solve Sudoku</b><br>
+solves the Sudoku. You can use Undo and Redo to step through the solution process
+<!--<LI>Prevent wrong input
+<LI>Display message when unsolvable-->
+</UL>
+
+<h4>The Help Menu</h4>
+<UL>
+<LI><b>Contents</b><br>
+displays this help file
+<LI><b>Sudoku Champion Homepage</b><br>
+goes to the Sudoku Champion homepage on the internet, where you can find the
+latest version
+<LI><b>About</b><br>
+displays an about box
+</UL>
+
+<h3>Miscellania</h3>
+I wrote Sudoku Champion as an excercise since I was learning C#. The best way to learn a programming
+language is to actually write a program and learn by doing. I got the idea to write a Sudoku program
+from L&eacute;onie Fierz (who is no relation of mine): She was a student in a Science course for Swiss youths, and
+told me that she was supposed to write a Sudoku program as an assignment in class. I was motivated to
+write Sudoku Champion when I saw the most beautiful woman of the clinic K&ouml;nigsfelden solve one on
+the train from Brugg to Z&uuml;rich. I finally started writing it in march 2006 in my mountain retreat in 
+the Engadin. 
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+<center>[ <a href="http://www.fierz.ch/sudoku.htm">Sudoku Champion Homepage</a> | <a href="http://www.fierz.ch/programs.htm">Programs by Martin Fierz</a>  ] </center>
+
+
+
+
+</body>
+</html>
